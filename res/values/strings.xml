@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Simple Route</string>
+    <string name="version">Version: %s</string>
+    <string name="copyrights">© Khmelenko Lab</string>
+    <string name="contacts">d.khmelenko@gmail.com</string>
+
+    <!-- Main screen -->
+    <string name="main_departure">From</string>
+    <string name="main_arrival">To</string>
+    <string name="main_search">Search</string>
+    <string name="main_searching_progress">Searching...</string>
+    <string name="main_menu_about">About</string>
+    <string name="main_menu_terms">Terms of Use</string>
+    <string name="main_menu_policy">Privacy Policy</string>
+    <string name="main_travel_mode">Travel mode</string>
+    <string name="main_travel_mode_driving">Drive</string>
+    <string name="main_travel_mode_walking">Walk</string>
+    <string name="main_travel_mode_bicycling">Bicycle</string>
+    <string name="main_my_location">My location</string>
+    
+    <string name="error_connection_failed">Connection failed. Please, check network connection.</string>
+    <string name="error_address_not_set">Location can\'t be retrieved. Please, check location settings.</string>
+    
+
+    <!-- Response statuses -->
+    <string name="status_ok">Success</string>
+    <string name="status_not_found">One of inputted location is not found. Please, recheck locations and try again</string>
+    <string name="status_zero_results">No route is found between the locations</string>
+    <string name="status_waypoints_exceeded">Too many waypoints are existed in the route</string>
+    <string name="status_invalid_request">The request is invalid. Please, recheck the request and try again</string>
+    <string name="status_over_query_limit">You have exceeded daily limit for requests</string>
+    <string name="status_request_denied">Request denied. Please, contact with the developer</string>
+    <string name="status_unknown_error">Server error occurred. Please, try again</string>
+
+    <!-- About screen -->
+    <string name="title_activity_about_screen">About</string>
+
+    <!-- Map screen -->
+    <string name="map_route_details">Route details</string>
+    
+    <!-- Route details screen -->
+    <string name="route_details_screen_title">Route Details</string>
+    <string name="route_name">Route: %s</string>
+    <string name="route_no_name">(no name)</string>
+    <string name="route_duration">Durations: %s</string>
+    <string name="route_distance">Distance: %s</string>
+    <string name="route_info">Route distance: %1$s \nRoute duration: %2$s</string>
+    
+    <!-- Utils -->
+    <string name="utils_days">%s days</string>
+    <string name="utils_hours">%s hours</string>
+    <string name="utils_minutes">%s minutes</string>
+    <string name="utils_seconds">%s seconds</string>
+    <string name="utils_kilometers">%s km</string>
+    <string name="utils_meters">%s meters</string>
+
+</resources>

@@ -1,0 +1,131 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true" >
+
+    <RelativeLayout
+        android:id="@+id/parentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/inputControls"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="@string/app_name"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:text="@string/main_departure" />
+
+            <AutoCompleteTextView
+                android:id="@+id/main_departure_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:completionThreshold="1"
+                android:padding="5dp"
+                android:hint="@string/main_my_location" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:text="@string/main_arrival" />
+
+            <AutoCompleteTextView
+                android:id="@+id/main_arrival_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:completionThreshold="1"
+                android:padding="5dp"
+                android:hint="@string/main_my_location" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:text="@string/main_travel_mode" />
+
+            <RadioGroup
+                android:id="@+id/main_travel_mode"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:checkedButton="@+id/main_mode_driving"
+                android:orientation="horizontal"
+                android:padding="5dp" >
+
+                <RadioButton
+                    android:id="@+id/main_mode_driving"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/radiobutton_selector"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:height="40dp"
+                    android:padding="2dp"
+                    android:text="@string/main_travel_mode_driving" />
+
+                <RadioButton
+                    android:id="@+id/main_mode_walking"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/radiobutton_selector"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:height="40dp"
+                    android:padding="2dp"
+                    android:text="@string/main_travel_mode_walking" />
+
+                <RadioButton
+                    android:id="@+id/main_mode_bicycling"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/radiobutton_selector"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:height="40dp"
+                    android:padding="2dp"
+                    android:text="@string/main_travel_mode_bicycling" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/search_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/main_search" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/inputControls"
+            android:layout_centerHorizontal="true"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:padding="5dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/powered_by_google" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>
